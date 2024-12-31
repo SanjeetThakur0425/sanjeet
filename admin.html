@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Page</title>
+    <link rel="stylesheet" href=" /Admin-Page/admin.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav_bar">
+            <div class="nav_logo">Dreams Come Here</div>
+
+            <div class="nav_btns">
+                <button class="btn btn_primary" id="post">PROPERTIES</button>
+                <button class="btn btn_secondary" id="post" onclick="showform()">POST PROPERTY</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="add-property-form">
+        <form action="">
+            <span>&times;</span>
+
+            <div class="background"></div>
+
+            <h2>Add New Property</h2>
+
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            <img id="imagePreview" class="image-preview" style="display: none;">
+
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" placeholder="Enter price" required>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Enter location" required>
+
+            <label for="area">Area (sq ft)</label>
+            <input type="text" id="area" name="area" placeholder="Enter area" required>
+
+            <label for="propertyType">Property Type</label>
+            <select id="propertyType" name="propertyType" required>
+                <option value="">Select Type</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="land">Land</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" placeholder="Enter property description"
+                required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+<script src="/Admin-Page/admin.js"></script>
+
+</body>
+
+</html>

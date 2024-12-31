@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --primary-color: #5d5fef;
+    --primary-color-dark: #4b4dbf;
+    --secondary-color: #131516;
+    --text-light: #767268;
+    --text-dark: #333333;
+    --extra-light: #f8f8f8;
+    --white: #ffffff;
+    --max-width: 1200px;
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav_bar {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav_logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+
+
+.nav_btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.btn{
+    padding: 0.75em 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_primary{
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.btn_secondary{
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.btn_primary:hover{
+    background-color: var(--primary-color-dark);
+    border-color:var(--primary-color-dark) ;
+}
+.btn_secondary:hover{
+    background-color: var(--primary-color-dark);
+    border-color:var(--primary-color-dark) ;
+}
+
+/* add property popup css */
+
+.add-property-form{
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px #767268;
+    transition: 2s;
+    border-radius: 10px;
+}
+
+.showadd-property-form{
+    top: 50%;
+}
+
+.add-property-form h2{
+text-align: center;
+font-weight: 700;
+
+}
+
+.add-property-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-property-form label{
+    margin-top: 10px;
+}
+
+.add-property-form input,
+.add-property-form textarea,
+.add-property-form select,
+.add-property-form button{
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-property-form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-property-form button:hover {
+    background-color: var(--primary-color-dark);
+    border-color:var(--primary-color-dark) ;
+}
+
+.add-property-form span{
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
