@@ -1,13 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Come Here</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav_bar">
+            <div class="nav_logo">Dreams Come Here</div>
+            <ul class="nav_links">
+                <li class="link"> <a href="#home"> HOME </a></li>
+                <li class="link"> <a href="#about"> ABOUT </a></li>
+                <li class="link"> <a href="#property"> PROPERTY </a></li>
+                <li class="link"> <a href="#contact"> CONTACT </a></li>
+            </ul>
+
+            <div class="nav_btns">
+                <button class="btn btn_secondary" id="loginButton">Login</button>
+
+                <div id="loginPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" id="closeLogin">&times;</span>
+                        <h2>Login</h2>
+                        <form id="loginForm">
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Password" required>
+                            <label>
+                                <input type="checkbox"> Remember me </label>
+                            <button type="submit">Login</button>
+                            <span class="link" id="forgotPassword">Forgot Password?</span>
+                            <span class="link" id="openRegister">Register</span>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="registerPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" id="closeRegister">&times;</span>
+                        <h2>Register</h2>
+                        <form id="registerForm">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Password" required>
+                            <input type="password" placeholder="Confirm Password" required>
+                            <button type="submit">Sign Up</button>
+                            <span class="link" id="backToLogin">Back to Login</span>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <script src="/login.js"></script>
+
+    <!-- ya bata suru xa nav paxi ko content  -->
+
+    <header class="header">
+        <div class="header_container">
+            <div class="header_content">
+                <h1>A home built and unique with love and derams</h1>
+                <p>Discover a curated selection of homes and commercial
+                    properties, along with expert tips, market insights, and valuable
+                    resources to help you make the best real estate decisions. Join us
+                    today and let's unlock the doors to your dream property!
+                </p>
+            </div>
+            <div class="header_image">
+                <img src="/assets/header.png" alt="House Image">
+            </div>
+        </div>
+    </header>
+
+    <section class="section_container about_container" id="about">
+        <div class="about_image">
+            <img src="/assets/about.jpg" alt="">
+        </div>
+
+        <div class="about_content">
+            <h3>ABOUT US</h3>
+            <h2 class="section_header">
+                We are a team of real estate professionals who are passionate about helping you find your dream
+                property.
+            </h2>
+            <p class="section_subheader">
+                We are committed to providing you with the best real estate experience possible. Our team of experts
+                will guide you through the process of buying property, ensuring that you get the best deal
+                possible. Whether you are looking for a new home, an investment property, or a commercial space, we are
+                here to help you every step of the way.
+            </p>
+            <div class="about_grid">
+                <div class="about_card">
+                    <h4>ONGOING PROPERTIES</h4>
+                    <p>10+</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section__container contact__container" id="contact">
+        <div class="contact__image">
+          <img src="assets/contact.jpg" alt="contact" />
+        </div>
+        <div class="contact__content">
+          <h2 class="section__header">Contact Us</h2>
+          <p class="section__subheader">
+            Discover the difference, where expertise meets excellence in real
+            estate. Let's embark on this exciting journey together.
+          </p>
+          <form action="#">
+            <div class="form__group">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+            <div class="form__group">
+              <input type="text" placeholder="Email Address" />
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <textarea cols="30" rows="5" placeholder="Description"></textarea>
+            <button>SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+  
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h4>HOLUX</h4>
+            <p>
+                We are committed to providing you with the best real estate
+                experience possible. Our team of experts will guide you through the
+                process of buying property, ensuring that you get the best deal
+                possible.
+            </p>
+            <div class="footer__socials">
+              <span>
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+              </span>
+              <span>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+              </span>
+              <span>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+              </span>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Company Info</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <a href="#">Terms</a>
+            <a href="#">Conditions</a>
+            <a href="#">Policy</a>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <a href="#">
+              <span><i class="ri-mail-line"></i></span> Dreamscomehere@gmail.com
+            </a>
+            <a href="#">
+              <span><i class="ri-phone-line"></i></span> +977-9812345678
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
 </html>
